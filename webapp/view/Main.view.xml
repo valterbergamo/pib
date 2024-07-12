@@ -1,0 +1,38 @@
+<mvc:View
+	controllerName="pib.cafelandia.app.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'pib/cafelandia/app/model/formatter'
+	}">
+
+	<Page showHeader="true" title="{i18n>home}" titleAlignment="Center" backgroundDesign="Transparent">
+
+	
+		<Table 	
+			id ="tbTeste"
+			items ="{ path: '/Orders'}">
+		
+			<columns>
+				<Column
+					width="12em">
+					<Text text="Product" />
+				</Column>
+			</columns>
+		
+			<items>
+				<ColumnListItem vAlign="Middle">
+					<cells>
+						<Text text="{ClientCode}" />
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+</Page>
+
+	
+
+</mvc:View>
